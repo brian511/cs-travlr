@@ -15,10 +15,10 @@ const app = express();
 
 var hbs = require('hbs');
 var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+// var express = require('express');
+// var path = require('path');
+// var cookieParser = require('cookie-parser');
+// var logger = require('morgan');
 
 
 // view engine setup
@@ -56,4 +56,16 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+//module.exports = app;
+
+//const express = require('express')
+//const app = express()
+const port = 3000
+
+//app.get('/', (req, res) => {
+//  res.send('Hello World!')
+//})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
