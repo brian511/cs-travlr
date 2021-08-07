@@ -18,10 +18,10 @@ const tripsList = async (req, res) => {
                 return res
                     .status(200)
                     .json(trips);
-                
+
             }
-        
-            
+
+
         });
 };
 
@@ -43,10 +43,10 @@ const tripsFindByCode = async (req, res) => {
                     .status(200)
                     .json(trip);
             }
-                    
-            
-            
-            
+
+
+
+
         });
 };
 module.exports = {

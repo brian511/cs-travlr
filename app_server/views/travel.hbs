@@ -20,9 +20,9 @@
 							<ul id="sites">
 								{{#each trips}}
 								<li>
-									<a href=“travel.html"><img src="images/{{this.image}}" alt="Img"></a>
-									<h2><a href=“travel.html">{{this.name}}</a></h2>
-									{{this.description}}
+									<a href="/api/trips/{{this.code}}">img src="images/{{this.image}}" alt="Img">
+										<h2><a href=“travel.html">{{this.name}}</a></h2>
+										{{this.description}}
 								</li>
 								{{/each}}
 
